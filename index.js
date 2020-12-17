@@ -34,7 +34,7 @@ const options = {
     },
     servers: [
       {
-        url: `http://${process.env[prod_host]}:8080/api/`,
+        url: `http://${process.env[prod_host]}:3000/api/`,
       },
     ],
   },
@@ -63,6 +63,6 @@ app.get("*", (req, res) => {
   res.send("Welcome !!");
 });
 
-app.listen(8080, () => {
-  console.log("listening on port 8080");
+app.listen(3000, () => {
+  console.log(`listening on http://${process.env[prod_host]}:3000`);
 });
