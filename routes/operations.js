@@ -44,7 +44,7 @@ const operationRouterWrapper = ({ qnaMakerClient }) => {
       return res.json({
         ...resultObj,
         ...(resultObj.resourceLocation && {
-          resourceLocation: `http:${process.env[prod_host]}:8080/api${resultObj.resourceLocation}`,
+          resourceLocation: `http:${process.env[prod_host]}:3000/api${resultObj.resourceLocation}`,
           ...(resultObj.resourceLocation && {
             knowledgebaseId: resultObj.resourceLocation.replace(
               "/knowledgebases/",
