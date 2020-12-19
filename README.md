@@ -11,6 +11,7 @@ The API's presented in the project communicates with a cognitive service that le
  - Publish the knowledgebase into production index so that it can be queried
  - Query the knowledgebase by asking a question
  - Delete a Knowledgebase
+ - Get list of all the existing knowledgebases
  
  > **The Base URL for this API service is,** <br/> http://104.131.169.147:3000/api/
  <br/>
